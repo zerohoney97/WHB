@@ -19,7 +19,6 @@ span {
   height: 45px;
   position: fixed;
   background: white;
-  border-bottom: 1px solid gray;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
@@ -27,6 +26,12 @@ span {
   z-index: 2;
 }
 
+.progress-bar {
+  border: 1px solid rgb(3, 169, 244);
+  width: 400px;
+  margin-top: 46px;
+  position: absolute;
+}
 .search-divide {
   position: absolute;
   right: 8px;
@@ -53,7 +58,7 @@ h1 {
   width: 708px;
   height: 688px;
 }
-.divde-line {
+.divide-line {
   border: 1px solid rgb(228, 227, 226);
   width: 100%;
 }
@@ -372,7 +377,8 @@ span {
   width: 708px;
   margin: auto;
   font-weight: bold;
-  margin-top: 400px;
+  margin-top: 200px;
+  margin-bottom: 100px;
 }
 
 /* 고정 버튼 */
@@ -402,4 +408,21 @@ span {
   position: absolute;
   bottom: 50px;
   right: 0;
+}
+
+.top {
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 0 4px 4px #d6d6d6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 5px;
+  bottom: -50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  background: white;
 }
