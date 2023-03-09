@@ -6,7 +6,9 @@
   font-family: "noto-light";
   src: url("../../day5/Noto_Sans_KR/NotoSansKR-Light.otf");
 }
-
+body {
+  font-family: sans-serif;
+}
 div,
 span {
   color: #37352f;
@@ -320,8 +322,26 @@ h1 {
   background: rgb(251, 243, 219);
 }
 
+.after-class {
+  margin-top: 50px;
+}
+
 .question {
+  margin-top: 60px;
+}
+
+.council {
   margin-top: 30px;
+}
+
+.enroll-center {
+  color: rgb(55, 53, 47);
+  border-bottom: 0.05em solid rgba(55, 53, 47, 0.4);
+  opacity: 0.7;
+  cursor: pointer;
+}
+.enroll-center:hover {
+  color: black;
 }
 
 .left-council {
@@ -357,6 +377,7 @@ span {
 .fixed-position {
   position: fixed;
   bottom: 8px;
+  z-index: 2;
 }
 
 .enroll-btn {
