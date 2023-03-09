@@ -16,22 +16,27 @@
 
     <!-- 상단 네비게이션 바 -->
 <div class="ee">
-
-<div class="navi_title">
-    <a href="./jaeyeong.html">
-    <div class="en">
-        <img class ="earthimg" src="./지구.PNG" alt="">
-        <div class="navi">문과생들이여, 메타버스 기획자로 미래의 문을 두드려라!</div>
-    </div>
-    </a>
-    <div class="search_copy">
-        <div class="Search">
-            <img class="searchimg" src="돋보기.PNG" alt="">
-            <div class="search">검색</div>
+<!-- <div> -->
+    <div class="navi_title">
+        <a href="./jaeyeong.html">
+        <div class="en">
+            <img class ="earthimg" src="./지구.PNG" alt="">
+            <div class="navi">문과생들이여, 메타버스 기획자로 미래의 문을 두드려라!</div>
         </div>
-        <div class="copy">복제</div>
+        </a>
+        <div class="search_copy">
+            <div class="Search">
+                <img class="searchimg" src="돋보기.PNG" alt="">
+                <div class="search">검색</div>
+            </div>
+            <div class="copy">복제</div>
+        </div>
     </div>
-</div>
+
+
+<!-- </div> -->
+
+<div><hr class="rr" id="progress"></hr></div>
 </div>
 <!-- 하단 네비게이션 바 -->
 
@@ -225,4 +230,30 @@
 
  
 </body>
+
+<script>
+    
+    
+    let progress=document.querySelector("#progress");
+    progress.style.width=`-1000px`
+
+    window.addEventListener("scroll", (event) => {
+    let scrollY = (this.scrollY/5.5);
+    progress.style.width=`${scrollY}px` 
+    console.log(scrollY);
+
+    });
+
+
+    
+  
+    
+    
+
+
+
+
+
+</script>
+
 </html>
