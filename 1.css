@@ -18,9 +18,9 @@
     width: 240px;
     height: 45px;
 
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    overflow: hidden; /* 박스 범위 밖 노출되는 부분을 안보이게 함*/
+    white-space: nowrap; /* 줄바꿈 안하고 가로 한줄로 처리함 */ 
+    text-overflow: ellipsis; /* 넘치는 텍스트 ...로 표기*/
 
 }
 .Search{
@@ -51,14 +51,14 @@
     
     background-color: white;
     top:0;
-    z-index: 2;
+    z-index: 2; /*화면에 보여질때 순서 */
     position: absolute;
     position: fixed;
     width: 98%;
     height: 45px;
     display: flex;
     
-    line-height: 45px;
+    line-height: 45px; /* 줄 간격 */ 
 }
 
 .earthimg{
